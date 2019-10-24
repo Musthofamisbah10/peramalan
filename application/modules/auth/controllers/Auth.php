@@ -1,14 +1,22 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Dashboard extends CI_Controller {
+class Auth extends CI_Controller {
 
 	public function index()
 	{
-		$data['judul'] = 'Peramalan Penjualan';
-		$this->load->view('templates/header', $data);
-		$this->load->view('templates/sidebar');
-		$this->load->view('dashboard/dashboard');
-		$this->load->view('templates/footer');
+		$data['judul'] = "Login Admin"	;
+		$this->load->view('admin_template/header', $data);
+		$this->load->view('auth');
+		$this->load->view('admin_template/footer');
 	}
+
+	public function auth()
+	{
+		
+	}
+
 }
+
+/* End of file Auth.php */
+/* Location: ./application/modules/auth/controllers/Auth.php */

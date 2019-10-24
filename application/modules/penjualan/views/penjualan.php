@@ -23,9 +23,25 @@
         <div class="row">
             <div class="col-md-12 col-sm-12 col-12">
                 <div class="card">
-                    <h5 class="card-header">Striped Table</h5>
+                    <h5 class="card-header">Data Penjualan</h5>
                     <div class="card-body">
-                        <button class="btn btn-primary btn-sm float-right mb-2" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-plus"></i> Tambah Data</button>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <form>
+                                    <div class="form-group">
+                                        <select class="form-control" id="input-select">
+                                            <option>Pilih Data Penjualan</option>
+                                            <option>Sandal Jepit</option>
+                                            <option>Sdandal Suwalo</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-sm-3"></div>
+                            <div class="col-sm-3">
+                                <button class="btn btn-primary btn-sm float-right mb-2" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-plus"></i> Tambah Data</button>
+                            </div>
+                        </div>
                         <table class="table table-striped">
                             <thead>
                                 <tr>
@@ -85,6 +101,18 @@
                                         <a href="#" class="badge badge-pill badge-warning"><i class="fas fa-edit"></i> Edit</a>
                                     </td>
                                 </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                    <td width="2px">
+                                        <a href="#" class="badge badge-pill badge-danger"><i class="fas fa-trash"></i> Delete</a>
+                                    </td>
+                                    <td width="2px">
+                                        <a href="#" class="badge badge-pill badge-warning"><i class="fas fa-edit"></i> Edit</a>
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -94,8 +122,8 @@
         <!-- and content -->
     </div>
 
-    <!-- Modal Kategori -->
-   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Modal Penjualan -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -110,6 +138,24 @@
                             <label for="inputEmail2" class="col-3 col-lg-2 col-form-label text-right">Stock</label>
                             <div class="col-9 col-lg-10">
                                 <input id="inputEmail2" type="email" required="" data-parsley-type="email" placeholder="Email" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputEmail2" class="col-3 col-lg-2 col-form-label text-right">Kategori</label>
+                            <div class="col-9 col-lg-10">
+                                <input id="inputEmail2" type="email" required="" data-parsley-type="email" placeholder="Email" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword2" class="col-3 col-lg-2 col-form-label text-right">Bulan</label>
+                            <div class="col-9 col-lg-10">
+                                <input id="inputPassword2" type="password" required="" placeholder="Password" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputWebSite" class="col-3 col-lg-2 col-form-label text-right">Tahun</label>
+                            <div class="col-9 col-lg-10">
+                                <input id="inputWebSite" type="url" required="" data-parsley-type="url" placeholder="URL" class="form-control">
                             </div>
                         </div>
                     </div>
